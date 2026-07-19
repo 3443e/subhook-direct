@@ -1,10 +1,9 @@
 # subhook-direct
 
 A fork of [subhook](https://github.com/Zeex/subhook) that patches code
-by writing through `/proc/[pid]/mem` instead of touching memory
+by writing through `/proc/self/mem` instead of touching memory
 directly, so it can install hooks into pages you don't have direct
-write access to (e.g. from a separate process context) without relying
-on `mprotect`.
+write access to without relying on `mprotect`.
 
 ## License
 
