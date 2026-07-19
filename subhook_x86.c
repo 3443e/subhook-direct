@@ -28,8 +28,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#ifndef SUBHOOK_WINDOWS
 #include <unistd.h>
 #include <fcntl.h>
+#endif
 
 #include "subhook.h"
 #include "subhook_private.h"
