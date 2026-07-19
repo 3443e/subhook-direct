@@ -37,6 +37,7 @@
 #ifdef SUBHOOK_WINDOWS
 	typedef unsigned __int8 uint8_t;
 	typedef __int32 int32_t;
+	typedef int pid_t;
 	#if SUBHOOK_BITS == 64
 		typedef __int64 intptr_t;
 	#elif SUBHOOK_BITS == 32
